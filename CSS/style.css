@@ -88,8 +88,8 @@ footer {
     display: flex; /* 使图标居中 */
     align-items: center; /* 垂直居中 */
     justify-content: center; /* 水平居中 */
-    width: 8vw; /* 使用视口宽度的8%来控制按钮大小 */
-    height: 8vw; /* 使用视口宽度的8%来控制按钮大小 */
+    width: 1vw; /* 使用视口宽度的8%来控制按钮大小 */
+    height: 1vw; /* 使用视口宽度的8%来控制按钮大小 */
     max-width: 50px; /* 最大宽度 */
     max-height: 50px; /* 最大高度 */
     min-width: 30px; /* 最小宽度 */
@@ -111,15 +111,6 @@ footer {
 .social-button:hover img {
     filter: brightness(0) invert(1); /* 悬浮时图标变为白色 */
 }
-
-/* 媒体查询：在屏幕宽度小于768px时 */
-@media (max-width: 768px) {
-    .social-button {
-        width: 10vw; /* 小屏幕下使用视口宽度的10% */
-        height: 10vw;
-    }
-}
-
 
 /* 表单样式 */
 form {
@@ -163,4 +154,8 @@ form {
     .navbar {
         flex-direction: column; /* 导航栏在小屏幕上垂直排列 */
     }
+
+    .social-button {
+    width: 0.8vw; /* 小屏幕下使用视口宽度的10% */
+    height: 0.8vw;
 }
